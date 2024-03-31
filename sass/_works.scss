@@ -1,0 +1,161 @@
+.works {
+  margin: 91px 0 0;
+  width: 100%;
+  height: 472px;
+  background-image: url(../img/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  &__box {
+    width: 33%;
+  }
+  &__title {
+    @include fonts3;
+    color: $clr3;
+    margin: $margin;
+  }
+  &__text {
+    @include fonts;
+    color: $clr3;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin: 23px auto 32px;
+  }
+  &__btn {
+    @include btn3;
+  }
+  &__with,
+  &__with2 {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+  }
+  &__with2 {
+    display: none;
+  }
+  &__with-1,
+  &__with-2,
+  &__with-3 {
+    width: 100%;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__tesla {
+    width: 129px;
+    height: 17px;
+  }
+  &__microsoft {
+    width: 145px;
+    height: 31px;
+  }
+  &__hp {
+    width: 140px;
+    height: 27px;
+  }
+  &__oracle {
+    width: 131px;
+    height: 17px;
+  }
+  &__google {
+    width: 96px;
+    height: 33px;
+  }
+  &__nvidia {
+    width: 137px;
+    height: 26px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .works {
+    margin: 100px 0 0;
+    height: 615px;
+    background-image: url(../img/works-map.png);
+    background-position-x: center;
+    position: relative;
+    &__with,
+    &__with2 {
+      width: 70%;
+      position: absolute;
+      top: 88px;
+    }
+    &__with2 {
+      display: none;
+    }
+    &__box {
+      margin-top: 155px;
+      text-align: center;
+      width: 65%;
+    }
+    &__btn:active {
+      background-color: $clr3;
+      color: #1c2f3aff;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .works {
+    margin: 80px auto 0;
+    width: 100%;
+    height: 670px;
+    background-size: cover;
+    &__with {
+      display: none;
+    }
+    &__with2 {
+      display: flex;
+    }
+    &__with-1,
+    &__with-2,
+    &__with-3 {
+      height: 27px;
+    }
+    &__tesla {
+      width: 107px;
+      height: 15px;
+    }
+    &__microsoft {
+      width: 120px;
+      height: 26px;
+    }
+    &__hp {
+      width: 115px;
+      height: 22px;
+    }
+    &__oracle {
+      width: 108px;
+      height: 14px;
+    }
+    &__google {
+      width: 79px;
+      height: 27px;
+    }
+    &__nvidia {
+      width: 113px;
+      height: 22px;
+    }
+    &__box {
+      width: 85%;
+      margin-top: 200px;
+      text-align: center;
+    }
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.246154px;
+      margin: 0;
+    }
+    &__text {
+      margin: 16px 0 32px;
+      width: 100%;
+    }
+    &__btn:active {
+      background-color: $clr3;
+      color: #1c2f3aff;
+    }
+  }
+}

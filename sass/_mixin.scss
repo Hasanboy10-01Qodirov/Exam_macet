@@ -1,0 +1,100 @@
+@mixin fonts() {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+}
+@mixin fonts1() {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+@mixin fonts2() {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+}
+@mixin fonts3() {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+}
+@mixin fonts4() {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+@mixin fonts5() {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.138462px;
+  color: $clr;
+}
+@mixin btn() {
+  @include fonts1;
+  text-align: center;
+  width: 173px;
+  height: 48px;
+  border: none;
+  border-radius: 24px;
+  background-color: $clr2;
+  letter-spacing: -0.115385px;
+  color: $clr3;
+  &:hover {
+    cursor: pointer;
+    background-color: #da6d97;
+  }
+  &:active {
+    cursor: pointer;
+    background: $clr2;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+  }
+}
+@mixin btn2() {
+  @include btn;
+  margin-left: -173px;
+}
+@mixin input() {
+  @include fonts1;
+  border: none;
+  border-radius: 24px;
+  width: 100%;
+  height: 48px;
+  padding-left: 27px;
+  color: #788a96;
+  box-shadow: 10px 8px 20px 0 rgb(10, 10, 10, 0.2);
+  &:hover {
+    cursor: default;
+    color: #042d53;
+  }
+}
+@mixin btn3 {
+  @include fonts1;
+  text-align: center;
+  width: 129px;
+  height: 48px;
+  background-color: #1c2f3a00;
+  color: $clr3;
+  border: 1px solid $clr3;
+  border-radius: 24px;
+  &:hover {
+    cursor: pointer;
+    background-color: $clr3;
+    color: #1c2f3aff;
+  }
+}

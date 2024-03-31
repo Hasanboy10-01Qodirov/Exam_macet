@@ -1,0 +1,105 @@
+.intro {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  gap: 143px;
+  &__box {
+    width: 52%;
+  }
+  &__title {
+    @include fonts2;
+    color: $clr;
+  }
+  &__form {
+    width: 80%;
+    display: flex;
+    margin: 44px 0 16px;
+  }
+  &__input {
+    @include input;
+  }
+  &__btn {
+    @include btn2;
+  }
+  &__question {
+    @include fonts1;
+    margin-left: 27px;
+    color: #b0b6bb;
+  }
+  &__link {
+    @include fonts1;
+    color: $clr;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__img {
+    width: 262.5px;
+    height: 500px;
+    border-radius: 35px;
+    box-shadow: 15px 18px 40px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .intro {
+    width: 90%;
+    margin: 48px auto 0;
+    flex-direction: column;
+    &__img {
+      width: 159px;
+      height: 300px;
+      margin: 0;
+      position: absolute;
+      border-radius: 20px;
+      box-shadow: 10px 18px 40px 8px rgba(0, 0, 0, 0.2);
+    }
+    &__box {
+      width: 90%;
+      margin-top: 310px;
+      text-align: center;
+    }
+    &__title {
+      @include fonts3;
+    }
+    &__form {
+      margin: 22px auto 16px;
+    }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .intro {
+    width: 95%;
+    margin-top: 32px;
+    &__img {
+      width: 127.2px;
+      height: 239.73px;
+      border-radius: 15px;
+    }
+    &__box {
+      width: 100%;
+      margin-top: 245px;
+    }
+    &__title {
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -0.246154px;
+    }
+    &__form {
+      width: 100%;
+      margin: 24px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    &__btn {
+      width: 100%;
+      margin: 0 auto;
+      box-shadow: 4px 6px 30px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
